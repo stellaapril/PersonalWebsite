@@ -1,0 +1,203 @@
+#header{
+height: 5vh;
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+z-index: 997;
+}
+.project{
+margin-top: 20vh;
+}
+.subnav{
+margin-top: 10vh;
+}
+.projecthome{
+margin-top: 1vh;
+}
+.projecthome_image img{
+width: 100%;
+}
+.projecthome_image_intro {
+width: 100%;
+height: 600%
+overflow: hidden;
+}
+.projecthome_image_intro img{
+width: 100%;
+}
+.projectvidwo{
+height: -70vh;
+overflow-y: hidden;
+}
+.projecthome_text{
+margin-top: 300px;
+}
+.project-container{
+width: 60%;
+}
+.projectintro{
+position: relative;
+width: 100%;
+height: 85vh;
+}
+.projectintro_container{
+height: 100%;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+.projectdetail_container{
+margin-bottom: 10vh;
+}
+.projectdetail_i img{
+width: 100%;
+}
+.projectdetail_i_ar img{
+width: 100%;
+}
+.projectdetail_i_80h img{
+width: 100%;
+}
+.projectdetail_content{
+margin-top: 100px;
+}
+.projectdetail_t{
+margin-bottom: 50px;
+}
+#name{
+justify-content: center;
+text-align: center;
+}
+.introbg{
+background-color: white;
+position: relative;
+width: 100%;
+height: 95vh;
+}
+#homepageintro_content h5{
+color:black;
+}
+#homepageintro_content p{
+color:black;
+}
+#homepageintro_indicator li{
+background-color: black;
+}
+.introtext{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.introtext img{
+width: 60%;
+}
+#readmore{
+height: 5vh;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+   width: 100%;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover a:link{
+  color: white;
+  text-decoration: none;
+  
+
+}
+
+.paddingy{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
