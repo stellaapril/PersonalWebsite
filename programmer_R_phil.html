@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf=8">
+		<title>Sitian Chen</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header id="header">
+			<nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center " >
+				<div class="project-container d-inline-flex ">
+					<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="#">Sitian Chen</a>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="programmer_Java_design4u.html">Projects</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-sm navbar-light bg-white justify-content-center " >
+				<div class="project-container d-inline-flex ">
+					<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item mx-2">
+								<a class="nav-link" href="programmer_Java_design4u.html">JAVA-DESIGN4U</a>
+							</li>
+							<li class="nav-item mx-2">
+								<a class="nav-link" href="programmer_wind.html">C#-WIND</a>
+							</li>
+							<li class="nav-item mx-2 active">
+								<a class="nav-link" href="programmer_R_phil.html">R-PHIL'S FORECASTS</a>
+							</li>
+							<li class="nav-item mx-2">
+								<a class="nav-link" href="programmer_R_youtube.html">R-YOUTUBE</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="project">
+			<div class="project-container mx-auto">
+				<div class="container-fluid">
+					<div class="projectdetail">
+						<div class="projectdetail_container pt-5">
+							<h1>WEATHER FORCASTING</h1>
+							<h5>DATA ANALYTICS | R</h5>
+						</div>
+						<div class="projectdetail_container">
+							<div class="projectdetail_content text-justify">
+								<div class="projectdetail_t" >
+									<h2>INTRODUCTION</h2>
+								</div>
+								<div class="text-justify mt-5">
+									<p>
+										Every February 2nd, a crowd of thousands gathers at Punxsutawney, Pennsylvania, to await a special forecast from a groundhog named Phil. Whether Phil has a forecasting ability is a century old debate.
+									</p>
+									<p>
+										Based on the analysis of average temperatures of February and March, and snowfall data, we can predict whether February has entered Early Spring. Compared the determination results through the temperatures data and the results through snowfall data with Phil’s forecasts, and we can evaluate whether Phil has a real forecasting power, and we will know did Phil’s accuracy rate and did Phil’s forecast even worse than random chance?
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="projectdetail_container">
+							<div class="projectdetail_content text-justify pb-5">
+								<div class="projectdetail_t">
+									<h2>METHODOLOGY</h2>
+									<h2>TEMPERATURE METHODOLOGY</h2>
+								</div>
+								<p>
+									Compared Average of 1901-2000 February Temperature with each year February Average Temperature, if the single year’s Feb average temperature is lower than Average of Century years February Temperature, it marked “Below”, otherwise, it marked “Above”. Compared Average of 1901-2000 March Temperature with each year March Average Temperature, if the single year’s Mar average temperature is lower than Average of Century years Mar Temperature, it marked “Below”, otherwise, it marked “Above”.
+								</p>
+								<ul>
+									<li>
+										When both Feb and Mar are above the century average temperature, we predict Early  Spring  coming.
+									</li>
+									<li>
+										On the other hand, when both of them is below the century average temperature, we predict it still Winter.
+									</li>
+									<li>
+										When Feb is below, but Mar is above, it indicated the temperature is gradually increasing, so we predict Early  Spring is coming.
+									</li>
+									<li>
+										When Feb is above but Mar is below, it indicated the temperature is decreasing in the March, we predict it still Winter. Unless, if that year the Feb Average is higher than March, we can predict Early Spring is coming.
+									</li>
+								</ul>
+								<p>
+									Determine Logical:
+								</p>
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Feb Above & Mar Above</th>
+											<th scope="col">Feb Above & Mar Below</th>
+											<th scope="col">Feb Below & Mar Above</th>
+											<th scope="col">Feb Below & Mar Below</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Early Spring</td>
+											<td>
+												Feb Avg Temp < Mar Avg Temp : Early Spring
+												<br/>
+												Feb Avg Temp < Mar Avg Temp : Winter
+											</td>
+											<td>Early Spring</td>
+											<td>Winter</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="projectdetail_container">
+							<div class="projectdetail_content text-justify pb-5">
+								<div class="projectdetail_t">
+									<h2>METHODOLOGY</h2>
+									<h2>SNOWFALL METHODOLOGY</h2>
+								</div>
+								<p>
+									Compared Average of Century Years February Snowfall with each year February Average Snowfall, if the single year’s Feb average temperature is lower than Average of Century Years February Snowfall it marked “Below”, otherwise, it marked “Above”. Compared Average of Century Years March Snowfall with each year March Average Snowfall, if the single year’s Mar average Snowfall is lower than Average of Century Years March Snowfall, it marked “Below”, otherwise, it marked “Above”.
+								</p>
+								<p>
+									If snow continually melts as it lands, and the accumulation never reaches 0.1 inches on your measuring surface, snowfall should be recorded as a trace (T) and record in your remarks that the "snow melted as it landed". So, when the value is T, it below the Average.
+								</p>
+								<p>
+									When Both Feb & Mar snowfall are Above Average Snowfall, it predict as Winter, otherwise it will be Spring.
+								</p>
+								<p>
+									Determine Logical:
+								</p>
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Feb Above & Mar Above</th>
+											<th scope="col">Feb Above & Mar Below</th>
+											<th scope="col">Feb Below & Mar Above</th>
+											<th scope="col">Feb Below & Mar Below</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Winter</td>
+											<td>Early Spring</td>
+											<td>Early Spring</td>
+											<td>Early Spring</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="projectdetail_container">
+							<div class="projectdetail_content text-justify pb-5">
+								<div class="projectdetail_t">
+									<h2>GRAPHS</h2>
+								</div>
+								<div class="text-justify mt-5">
+									<p><strong>Phil’s Forecasting Result Since 1898</strong></p>
+									<div class="projectdetail_i text-center">
+										<img src="image\programmer\r-phil\1.png"  class="bg-light"
+										style="width: 50%">
+									</div>
+								</div>
+								<div class="text-justify mt-5">
+									<p><strong>Temperature Comparison Between Full Shadow, No Shadow and Partial Shadow</strong></p>
+									<p>This box plot shows us the distribution of Feb and Mar Average temperature in different Phil’s predict results.</p>
+									<div class="projectdetail_i text-center">
+										<img src="image\programmer\r-phil\2.png"  class="bg-light"
+										style="width: 50%">
+									</div>
+								</div>
+								<div class="text-justify mt-5">
+									<p><strong>Temperature Comparison Between Early Spring and Winter (Temperature Methodology)</strong></p>
+									<p>
+									This box plot shows us the distribution of Feb and Mar Average temperature in Winter and Early Spring which using temperature methodology predict. We can see using the temperature data predict early spring is more reliable than phil.</p>
+									<div class="projectdetail_i text-center">
+										<img src="image\programmer\r-phil\3.png"  class="bg-light"
+										style="width: 50%">
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="projectdetail_container">
+							<div class="projectdetail_content text-justify pb-5">
+								<div class="projectdetail_t">
+									<h2>HYPOTHESIS TESTING</h2>
+								</div>
+								<div class="text-justify mt-5">
+									<p><strong>T.Test(Phil’s Accuracy-temperature methodology, Random Chance 0.5):</strong></p>
+									<p>
+										NULL Hypothesis: Phil’s prediction accuracy is equal to Random Chance(0.5)
+									</p>
+									<p>
+										Alternative Hypothesis: Phil’s prediction accuracy is less than Random Chance(0.5)
+									</p>
+									<p>
+										Result: The p-value is 1.771e-08, it is <0.05, which means Phil’s prediction accuracy and Random Chance has a statistically significant difference. So, we have a low chance to incorrectly reject the NULL Hypothesis. The 95 percent confidence interval is (-Inf,0.33). The mean of Phil’s prediction accuracy is 0.26.
+									</p>
+								</div>
+								
+								<div class="text-justify mt-5">
+									<p><strong>Proportions Test:</strong></p>
+									<p>
+										Phil’s prediction accuracy(Temperature Methodology)and random chance (0.5)
+									</p>
+									<p>
+										Result: The p-value is 11.64e-07, it is <0.05, which means Phil’s prediction accuracy and Random Chance has a statistically significant difference. So, we have a low chance to incorrectly reject the NULL Hypothesis.
+									</p>
+								</div>
+								<div class="text-justify mt-5">
+									<p><strong>Proportions Test:</strong></p>
+									<p>
+										Phil’s prediction accuracy(Snowfalls Methodology) and random chance (0.5)
+									</p>
+									<p>
+										NULL Hypothesis: Phil’s prediction accuracy (Snowfalls Methodology) is equal to Random Chance(0.5)
+									</p>
+									<p>
+										Alternative Hypothesis: Phil’s prediction accuracy (Snowfalls Methodology) is less than Random Chance(0.5)
+									</p>
+									<p>
+										Result: The p-value is 2.2e-16, it is <0.05, which means Phil’s prediction accuracy (Snowfalls Methodology) and Random Chance has a statistically significant difference. So, we have a low chance to incorrectly reject the NULL Hypothesis.
+									</p>
+									<p><strong>Result of Phil’s Forecasting Accuracy Result:</strong></p>
+									<div class="projectdetail_i text-center">
+										<img src="image\programmer\r-phil\4.png"  class="bg-light"
+										style="width: 30%">
+										<img src="image\programmer\r-phil\5.png"  class="bg-light"
+										style="width: 30%">
+									</div>
+								</div>
+								<div class="text-justify mt-5">
+									<p><strong>T.Test(Phil’s Accuracy-temperature methodology, Phil’s Accuracy-snowfalls methodology):</strong></p>
+									<p>
+										NULL Hypothesis: Phil’s prediction accuracy result(temperature methodology) is equal to Phil’s Accuracy result(Denver snowfall methodology)
+									</p>
+									<p>
+										Alternative Hypothesis: Phil’s prediction accuracy result(temperature methodology) is not equal to Phil’s Accuracy result(Denver snowfall methodology)
+									</p>
+									<p>
+										Result: The p-value is0.00102, it is <0.05, which means Phil’s prediction accuracy result(temperature methodology) and Phil’s Accuracy result(Denver snowfall methodology)
+										has a statistically significant difference. So, we have a low chance to incorrectly reject the NULL Hypothesis.
+									</p>
+									<p><strong>The 95 percent confidence interval is (0.06691798 ,0.26066822)</strong></p>
+									<p><strong>The mean of Phil’s prediction accuracy result(temperature methodology) : 0.258</strong></p>
+									<p><strong>The mean of Phil’s Accuracy result(Denver snowfall methodology) : 0.094</strong></p>
+									<p><strong>These two different methods results of Phil’s accuracy are different.</strong></p>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="projectdetail_container">
+							<div class="projectdetail_content text-justify pb-5">
+								<div class="projectdetail_t" >
+									<h2>CONCLUSIONS</h2>
+								</div>
+								
+								<p>
+								The temperature methodology Phil’s prediction accuracy is 25.8%, and the Snowfalls methodology Phil’s predication accuracy is 9.5%. The 4.1&4.2 hypothesis testing indicates that Phil has no predication power, and accuracy less than random chance. In addition, the Phil’s accuracy determined by two different methodology, their results have a statistically significant different. </p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
